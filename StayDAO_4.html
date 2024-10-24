@@ -1,0 +1,1538 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StayDAO Business Plan</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: #ffffff;
+            color: #1d1d1f;
+        }
+        
+        .hero-section {
+            background: linear-gradient(135deg, #000000 0%, #2c2c2e 100%);
+            color: white;
+            padding: 120px 0;
+            text-align: center;
+        }
+        
+        .section-title {
+            font-size: 48px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            margin-bottom: 24px;
+        }
+        
+        .grid-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 24px;
+            margin: 48px 0;
+        }
+        
+        .stat-card {
+            background: #f5f5f7;
+            border-radius: 16px;
+            padding: 24px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        
+        .stat-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .stat-number {
+            font-size: 36px;
+            font-weight: 700;
+            color: #1d1d1f;
+            margin-bottom: 8px;
+        }
+        
+        .navigation {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navigation">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="text-2xl font-bold">StayDAO</div>
+                <div class="space-x-8">
+                    <a href="#concept" class="hover:text-gray-600">コンセプト</a>
+                    <a href="#market" class="hover:text-gray-600">市場分析</a>
+                    <a href="#service" class="hover:text-gray-600">サービス</a>
+                    <a href="#plan" class="hover:text-gray-600">実施計画</a>
+                    <a href="#financial" class="hover:text-gray-600">収支計画</a>
+                    <a href="#risk" class="hover:text-gray-600">リスク分析</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-section">
+        <div class="container mx-auto px-6">
+            <h1 class="text-5xl font-bold mb-6">StayDAO</h1>
+            <p class="text-2xl mb-4">Web3技術で実現する次世代型シェアハウスネットワーク</p>
+            <p class="text-xl text-gray-300 mb-12">空き家問題の解決と変化する居住ニーズに対応する、
+                <br>革新的なシェアハウス型宿泊ネットワークの構築を目指します。</p>
+            
+            <div class="grid-stats">
+                <div class="stat-card">
+                    <div class="stat-number">15施設</div>
+                    <div class="text-gray-600">実証施設数</div>
+                    <div class="text-sm text-gray-500">九州エリアでの展開</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">1,000名</div>
+                    <div class="text-gray-600">初期会員数</div>
+                    <div class="text-sm text-gray-500">実証段階での目標</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">1.44億円</div>
+                    <div class="text-gray-600">初年度売上高</div>
+                    <div class="text-sm text-gray-500">15施設×月80万円</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">15%</div>
+                    <div class="text-gray-600">想定営業利益率</div>
+                    <div class="text-sm text-gray-500">業界平均8%</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="concept" class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title">事業コンセプト</h2>
+
+            <div class="mb-16">
+                <h3 class="text-3xl font-semibold mb-8">解決を目指す社会課題</h3>
+                <div class="overflow-x-auto">
+                    <table class="w-full border-collapse bg-white rounded-lg shadow-sm">
+                        <thead class="bg-gray-50">
+                            <tr>
+                                <th class="p-4 text-left border-b">課題</th>
+                                <th class="p-4 text-left border-b">現状</th>
+                                <th class="p-4 text-left border-b">背景</th>
+                                <th class="p-4 text-left border-b">詳細情報</th>
+                                <th class="p-4 text-left border-b">優先度</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="hover:bg-gray-50">
+                                <td class="p-4 border-b">
+                                    <div class="font-semibold">空き家</div>
+                                </td>
+                                <td class="p-4 border-b">
+                                    <div class="font-bold">849万戸</div>
+                                    <div class="text-sm text-gray-600">（2023年時点）</div>
+                                </td>
+                                <td class="p-4 border-b">
+                                    <ul class="list-disc list-inside text-sm">
+                                        <li>高齢化進展</li>
+                                        <li>維持管理負担増</li>
+                                    </ul>
+                                </td>
+                                <td class="p-4 border-b">
+                                    <div class="text-sm">
+                                        年間3.2%増加
+                                        <br>都市部と地方で偏在
+                                    </div>
+                                </td>
+                                <td class="p-4 border-b">
+                                    <span class="px-3 py-1 bg-red-100 text-red-800 rounded-full text-sm">最重要</span>
+                                </td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="p-4 border-b">
+                                    <div class="font-semibold">都市部住居費</div>
+                                </td>
+                                <td class="p-4 border-b">
+                                    <div class="font-bold">平均11万円/月</div>
+                                    <div class="text-sm text-gray-600">（単身世帯）</div>
+                                </td>
+                                <td class="p-4 border-b">
+                                    <ul class="list-disc list-inside text-sm">
+                                        <li>需給ミスマッチ</li>
+                                        <li>土地価格高騰</li>
+                                    </ul>
+                                </td>
+                                <td class="p-4 border-b">
+                                    <div class="text-sm">
+                                        収入の35%以上を占める
+                                        <br>若年層の負担大
+                                    </div>
+                                </td>
+                                <td class="p-4 border-b">
+                                    <span class="px-3 py-1 bg-orange-100 text-orange-800 rounded-full text-sm">重要</span>
+                                </td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="p-4 border-b">
+                                    <div class="font-semibold">地方宿泊施設</div>
+                                </td>
+                                <td class="p-4 border-b">
+                                    <div class="font-bold">稼働率45%</div>
+                                    <div class="text-sm text-gray-600">（地方平均）</div>
+                                </td>
+                                <td class="p-4 border-b">
+                                    <ul class="list-disc list-inside text-sm">
+                                        <li>観光需要変動</li>
+                                        <li>季節性の課題</li>
+                                    </ul>
+                                </td>
+                                <td class="p-4 border-b">
+                                    <div class="text-sm">
+                                        年間を通じた安定性欠如
+                                        <br>収益性の課題
+                                    </div>
+                                </td>
+                                <td class="p-4 border-b">
+                                    <span class="px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-sm">中</span>
+                                </td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="p-4 border-b">
+                                    <div class="font-semibold">コミュニティ</div>
+                                </td>
+                                <td class="p-4 border-b">
+                                    <div class="font-bold">孤立世帯30%</div>
+                                    <div class="text-sm text-gray-600">（都市部）</div>
+                                </td>
+                                <td class="p-4 border-b">
+                                    <ul class="list-disc list-inside text-sm">
+                                        <li>個人主義化</li>
+                                        <li>関係性の希薄化</li>
+                                    </ul>
+                                </td>
+                                <td class="p-4 border-b">
+                                    <div class="text-sm">
+                                        社会的つながりの減少
+                                        <br>コミュニティ不足
+                                    </div>
+                                </td>
+                                <td class="p-4 border-b">
+                                    <span class="px-3 py-1 bg-orange-100 text-orange-800 rounded-full text-sm">重要</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 mb-16">
+                <div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
+                    <h4 class="text-2xl font-semibold mb-6">利用者への提供価値</h4>
+                    <div class="space-y-6">
+                        <div>
+                            <div class="flex items-center mb-2">
+                                <svg class="w-6 h-6 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span class="font-semibold">住居費の20-30%削減</span>
+                            </div>
+                            <div class="ml-8 text-sm text-gray-600">
+                                <p>・従来比での大幅コスト削減</p>
+                                <p>・効率的な空間利用</p>
+                                <p>・柔軟な利用形態</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex items-center mb-2">
+                                <svg class="w-6 h-6 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span class="font-semibold">複数拠点での生活機会</span>
+                            </div>
+                            <div class="ml-8 text-sm text-gray-600">
+                                <p>・全国ネットワークの活用</p>
+                                <p>・柔軟な居住スタイル</p>
+                                <p>・地域間移動の自由</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex items-center mb-2">
+                                <svg class="w-6 h-6 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span class="font-semibold">コミュニティへの帰属感</span>
+                            </div>
+                            <div class="ml-8 text-sm text-gray-600">
+                                <p>・共通の価値観を持つ仲間</p>
+                                <p>・相互扶助の機会</p>
+                                <p>・文化的交流の場</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
+                    <h4 class="text-2xl font-semibold mb-6">物件オーナーへの提供価値</h4>
+                    <div class="space-y-6">
+                        <div>
+                            <div class="flex items-center mb-2">
+                                <svg class="w-6 h-6 text-blue-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span class="font-semibold">安定収益（最低稼働率保証）</span>
+                            </div>
+                            <div class="ml-8 text-sm text-gray-600">
+                                <p>・最低保証稼働率: 70%</p>
+                                <p>・年間収益予測可能</p>
+                                <p>・長期契約オプション</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex items-center mb-2">
+                                <svg class="w-6 h-6 text-blue-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span class="font-semibold">運営負担の大幅軽減</span>
+                            </div>
+                            <div class="ml-8 text-sm text-gray-600">
+                                <p>・完全自動化運営</p>
+                                <p>・メンテナンス代行</p>
+                                <p>・24時間サポート体制</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex items-center mb-2">
+                                <svg class="w-6 h-6 text-blue-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span class="font-semibold">遊休資産の活用機会</span>
+                            </div>
+                            <div class="ml-8 text-sm text-gray-600">
+                                <p>・リノベーション支援</p>
+                                <p>・資産価値の維持向上</p>
+                                <p>・新たな収益機会</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
+                    <h4 class="text-2xl font-semibold mb-6">地域社会への提供価値</h4>
+                    <div class="space-y-6">
+                        <div>
+                            <div class="flex items-center mb-2">
+                                <svg class="w-6 h-6 text-purple-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span class="font-semibold">空き家の有効活用</span>
+                            </div>
+                            <div class="ml-8 text-sm text-gray-600">
+                                <p>・地域資産の再生</p>
+                                <p>・街並み保全</p>
+                                <p>・防犯・防災対策</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex items-center mb-2">
+                                <svg class="w-6 h-6 text-purple-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span class="font-semibold">交流人口の増加</span>
+                            </div>
+                            <div class="ml-8 text-sm text-gray-600">
+                                <p>・新たな人材流入</p>
+                                <p>・地域活性化</p>
+                                <p>・文化交流の促進</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex items-center mb-2">
+                                <svg class="w-6 h-6 text-purple-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span class="font-semibold">地域経済への貢献</span>
+                            </div>
+                            <div class="ml-8 text-sm text-gray-600">
+                                <p>・地域消費の活性化</p>
+                                <p>・雇用機会の創出</p>
+                                <p>・新規ビジネス機会</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="market" class="bg-black text-white rounded-3xl p-12">
+                <h3 class="text-3xl font-semibold mb-8">市場環境詳細</h3>
+                <div class="grid md:grid-cols-3 lg:grid-cols-5 gap-8">
+                    <div class="text-center">
+                        <div class="text-4xl font-bold mb-2">1.2兆円</div>
+                        <div class="text-gray-400">シェアハウス市場</div>
+                        <div class="text-green-400">+8%/年</div>
+                        <div class="text-sm text-gray-500 mt-2">業界団体調査</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-4xl font-bold mb-2">2,023万世帯</div>
+                        <div class="text-gray-400">単身世帯数</div>
+                        <div class="text-green-400">+2.1%/年</div>
+                        <div class="text-sm text-gray-500 mt-2">国勢調査</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-4xl font-bold mb-2">38.2%</div>
+                        <div class="text-gray-400">リモートワーク率</div>
+                        <div class="text-green-400">+5%/年</div>
+                        <div class="text-sm text-gray-500 mt-2">厚労省調査</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-4xl font-bold mb-2">12.5%</div>
+                        <div class="text-gray-400">多拠点居住希望者</div>
+                        <div class="text-green-400">+3%/年</div>
+                        <div class="text-sm text-gray-500 mt-2">民間調査</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-4xl font-bold mb-2">849万戸</div>
+                        <div class="text-gray-400">空き家数</div>
+                        <div class="text-green-400">+3.2%/年</div>
+                        <div class="text-sm text-gray-500 mt-2">総務省統計</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title">競合分析</h2>
+            
+            <div class="mb-16">
+                <h3 class="text-3xl font-semibold mb-8">既存サービス分析</h3>
+                <div class="grid lg:grid-cols-2 xl:grid-cols-4 gap-6">
+                    <div class="bg-white rounded-xl p-6 shadow-sm">
+                        <div class="flex justify-between items-start mb-4">
+                            <h4 class="text-xl font-semibold">従来型シェアハウス</h4>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">大手不動産会社</span>
+                        </div>
+                        <div class="space-y-4">
+                            <div>
+                                <div class="text-gray-600 text-sm">料金体系</div>
+                                <div class="font-semibold">家賃：6-12万円/月</div>
+                                <div class="font-semibold">敷金：2ヶ月</div>
+                            </div>
+                            <div>
+                                <div class="text-gray-600 text-sm">特徴</div>
+                                <ul class="list-disc list-inside text-sm">
+                                    <li>従来型契約</li>
+                                    <li>対面運営</li>
+                                    <li>固定費高</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <div class="text-gray-600 text-sm">課題</div>
+                                <ul class="list-disc list-inside text-sm text-red-600">
+                                    <li>運営コスト高</li>
+                                    <li>柔軟性不足</li>
+                                    <li>スケール困難</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-xl p-6 shadow-sm">
+                        <div class="flex justify-between items-start mb-4">
+                            <h4 class="text-xl font-semibold">シェアオフィス複合型</h4>
+                            <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">WeWork等</span>
+                        </div>
+                        <div class="space-y-4">
+                            <div>
+                                <div class="text-gray-600 text-sm">料金体系</div>
+                                <div class="font-semibold">会費：3-8万円/月</div>
+                                <div class="font-semibold">入会金：5万円</div>
+                            </div>
+                            <div>
+                                <div class="text-gray-600 text-sm">特徴</div>
+                                <ul class="list-disc list-inside text-sm">
+                                    <li>都市部中心</li>
+                                    <li>高機能施設</li>
+                                    <li>コミュニティ重視</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <div class="text-gray-600 text-sm">課題</div>
+                                <ul class="list-disc list-inside text-sm text-red-600">
+                                    <li>地域限定</li>
+                                    <li>高コスト構造</li>
+                                    <li>収益性課題</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-xl p-6 shadow-sm">
+                        <div class="flex justify-between items-start mb-4">
+                            <h4 class="text-xl font-semibold">マンスリーマンション</h4>
+                            <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">国内チェーン</span>
+                        </div>
+                        <div class="space-y-4">
+                            <div>
+                                <div class="text-gray-600 text-sm">料金体系</div>
+                                <div class="font-semibold">料金：8-15万円/月</div>
+                                <div class="font-semibold">清掃費：1万円</div>
+                            </div>
+                            <div>
+                                <div class="text-gray-600 text-sm">特徴</div>
+                                <ul class="list-disc list-inside text-sm">
+                                    <li>短期利用向き</li>
+                                    <li>家具付き</li>
+                                    <li>サービス充実</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <div class="text-gray-600 text-sm">課題</div>
+                                <ul class="list-disc list-inside text-sm text-red-600">
+                                    <li>価格帯が高い</li>
+                                    <li>コミュニティなし</li>
+                                    <li>長期利用非効率</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-xl p-6 shadow-sm">
+                        <div class="flex justify-between items-start mb-4">
+                            <h4 class="text-xl font-semibold">ゲストハウス</h4>
+                            <span class="px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-sm">個人経営</span>
+                        </div>
+                        <div class="space-y-4">
+                            <div>
+                                <div class="text-gray-600 text-sm">料金体系</div>
+                                <div class="font-semibold">料金：3-5千円/泊</div>
+                                <div class="font-semibold">週割：2-3万円</div>
+                            </div>
+                            <div>
+                                <div class="text-gray-600 text-sm">特徴</div>
+                                <ul class="list-disc list-inside text-sm">
+                                    <li>カジュアル</li>
+                                    <li>観光向け</li>
+                                    <li>設備簡易</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <div class="text-gray-600 text-sm">課題</div>
+                                <ul class="list-disc list-inside text-sm text-red-600">
+                                    <li>安定性不足</li>
+                                    <li>規模の限界</li>
+                                    <li>品質にばらつき</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-3xl p-12 mb-16">
+                <h3 class="text-3xl font-semibold mb-8">当社の差別化要素</h3>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- 運営コスト -->
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center text-white">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                            </div>
+                            <h4 class="text-xl font-semibold ml-4">運営コスト</h4>
+                        </div>
+                        <div class="pl-16">
+                            <div class="text-gray-600 mb-2">従来型サービス比</div>
+                            <div class="relative pt-1">
+                                <div class="flex mb-2 items-center justify-between">
+                                    <div>
+                                        <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-green-600 bg-green-200">
+                                            70%削減
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="overflow-hidden h-2 mb-4 text-xs flex rounded bg-gray-200">
+                                    <div style="width:30%" class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-green-500"></div>
+                                </div>
+                            </div>
+                            <ul class="text-sm space-y-1">
+                                <li>・自動化による人件費削減</li>
+                                <li>・IoT活用による効率化</li>
+                                <li>・コミュニティ運営活用</li>
+                            </ul>
+                        </div>
+                    </div>
+            
+                    <!-- 利用柔軟性 -->
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center text-white">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                            </div>
+                            <h4 class="text-xl font-semibold ml-4">利用柔軟性</h4>
+                        </div>
+                        <div class="pl-16">
+                            <div class="space-y-4">
+                                <div>
+                                    <div class="text-gray-600 mb-2">従来型</div>
+                                    <div class="bg-gray-100 rounded-lg p-3">
+                                        <p class="text-sm">固定契約中心</p>
+                                        <p class="text-xs text-gray-500">・最低契約期間あり</p>
+                                        <p class="text-xs text-gray-500">・解約制限あり</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="text-gray-600 mb-2">StayDAO</div>
+                                    <div class="bg-blue-50 rounded-lg p-3">
+                                        <p class="text-sm font-semibold text-blue-600">完全従量制＋トークン制</p>
+                                        <p class="text-xs text-gray-500">・利用時のみ課金</p>
+                                        <p class="text-xs text-gray-500">・トークンによる権利保有</p>
+                                        <p class="text-xs text-gray-500">・全国で利用可能</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <!-- 展開速度 -->
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center text-white">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                                </svg>
+                            </div>
+                            <h4 class="text-xl font-semibold ml-4">展開速度</h4>
+                        </div>
+                        <div class="pl-16">
+                            <div class="space-y-4">
+                                <div>
+                                    <div class="text-gray-600 mb-2">従来型</div>
+                                    <div class="bg-gray-100 rounded-lg p-3">
+                                        <p class="text-sm">物件ごとに個別対応</p>
+                                        <p class="text-xs text-gray-500">・個別契約必要</p>
+                                        <p class="text-xs text-gray-500">・カスタマイズ対応</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="text-gray-600 mb-2">StayDAO</div>
+                                    <div class="bg-purple-50 rounded-lg p-3">
+                                        <p class="text-sm font-semibold text-purple-600">標準化による一括展開</p>
+                                        <p class="text-xs text-gray-500">・システム標準装備</p>
+                                        <p class="text-xs text-gray-500">・即時展開可能</p>
+                                        <p class="text-xs text-gray-500">・スケーラブル</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <!-- コミュニティ形成 -->
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center text-white">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                                </svg>
+                            </div>
+                            <h4 class="text-xl font-semibold ml-4">コミュニティ形成</h4>
+                        </div>
+                        <div class="pl-16">
+                            <div class="space-y-4">
+                                <div>
+                                    <div class="text-gray-600 mb-2">従来型</div>
+                                    <div class="bg-gray-100 rounded-lg p-3">
+                                        <p class="text-sm">形成難しい</p>
+                                        <p class="text-xs text-gray-500">・関係性が希薄</p>
+                                        <p class="text-xs text-gray-500">・インセンティブなし</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="text-gray-600 mb-2">StayDAO</div>
+                                    <div class="bg-orange-50 rounded-lg p-3">
+                                        <p class="text-sm font-semibold text-orange-600">トークンによるインセンティブ</p>
+                                        <p class="text-xs text-gray-500">・相互評価システム</p>
+                                        <p class="text-xs text-gray-500">・コミュニティ報酬</p>
+                                        <p class="text-xs text-gray-500">・ガバナンス参加権</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div>
+                <div class="bg-gradient-to-br from-gray-900 to-gray-800 rounded-3xl p-12 text-white">
+                    <h3 class="text-3xl font-semibold mb-8">目標市場セグメント</h3>
+                    <div class="grid md:grid-cols-3 gap-8">
+                        <div class="bg-white/10 rounded-xl p-6 backdrop-blur-lg">
+                            <div class="flex justify-between items-start mb-6">
+                                <h4 class="text-xl font-semibold">デジタルノマド</h4>
+                                <span class="px-3 py-1 bg-green-500/20 text-green-300 rounded-full text-sm">優先度高</span>
+                            </div>
+                            <div class="space-y-4">
+                                <div>
+                                    <div class="text-gray-400">市場規模</div>
+                                    <div class="text-2xl font-bold">50万人</div>
+                                    <div class="text-green-400">獲得目標: 5%</div>
+                                </div>
+                                <div>
+                                    <div class="text-gray-400">特徴</div>
+                                    <ul class="list-disc list-inside text-sm space-y-1">
+                                        <li>場所を問わない</li>
+                                        <li>収入安定</li>
+                                        <li>コミュニティ重視</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <div class="text-gray-400">獲得戦略</div>
+                                    <ul class="list-disc list-inside text-sm space-y-1">
+                                        <li>SNSマーケティング</li>
+                                        <li>コワーキング連携</li>
+                                        <li>コミュニティイベント</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white/10 rounded-xl p-6 backdrop-blur-lg">
+                            <div class="flex justify-between items-start mb-6">
+                                <h4 class="text-xl font-semibold">副業・複業層</h4>
+                                <span class="px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-sm">優先度中</span>
+                            </div>
+                            <div class="space-y-4">
+                                <div>
+                                    <div class="text-gray-400">市場規模</div>
+                                    <div class="text-2xl font-bold">200万人</div>
+                                    <div class="text-blue-400">獲得目標: 2%</div>
+                                </div>
+                                <div>
+                                    <div class="text-gray-400">特徴</div>
+                                    <ul class="list-disc list-inside text-sm space-y-1">
+                                        <li>複数拠点必要</li>
+                                        <li>コスト意識高い</li>
+                                        <li>時間効率重視</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <div class="text-gray-400">獲得戦略</div>
+                                    <ul class="list-disc list-inside text-sm space-y-1">
+                                        <li>ビジネス特化型施設</li>
+                                        <li>効率的な利用プラン</li>
+                                        <li>法人契約オプション</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="bg-white/10 rounded-xl p-6 backdrop-blur-lg">
+                            <div class="flex justify-between items-start mb-6">
+                                <h4 class="text-xl font-semibold">地方創生従事者</h4>
+                                <span class="px-3 py-1 bg-purple-500/20 text-purple-300 rounded-full text-sm">優先度中</span>
+                            </div>
+                            <div class="space-y-4">
+                                <div>
+                                    <div class="text-gray-400">市場規模</div>
+                                    <div class="text-2xl font-bold">30万人</div>
+                                    <div class="text-purple-400">獲得目標: 8%</div>
+                                </div>
+                                <div>
+                                    <div class="text-gray-400">特徴</div>
+                                    <ul class="list-disc list-inside text-sm space-y-1">
+                                        <li>地域間移動多い</li>
+                                        <li>ネットワーク重視</li>
+                                        <li>予算制約あり</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <div class="text-gray-400">獲得戦略</div>
+                                    <ul class="list-disc list-inside text-sm space-y-1">
+                                        <li>自治体連携</li>
+                                        <li>地域限定プラン</li>
+                                        <li>補助金活用支援</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <section id="service" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">サービス設計</h2>
+    
+                <div class="mb-16">
+                    <h3 class="text-3xl font-semibold mb-8">会員制度案（試験運用フェーズ）</h3>
+                    <div class="grid md:grid-cols-3 gap-8">
+                        <div class="bg-gradient-to-br from-black to-gray-800 text-white rounded-2xl p-8 transform hover:scale-105 transition-transform duration-300">
+                            <div class="flex justify-between items-start mb-6">
+                                <h4 class="text-2xl font-bold">Unlimited</h4>
+                                <span class="bg-gradient-to-r from-green-400 to-blue-400 text-white px-3 py-1 rounded-full text-sm">検証版</span>
+                            </div>
+                            <div class="space-y-6">
+                                <div>
+                                    <div class="text-gray-400">必要トークン</div>
+                                    <div class="text-3xl font-bold">2,000 SDT</div>
+                                </div>
+                                <div>
+                                    <div class="text-gray-400">月会費</div>
+                                    <div class="text-3xl font-bold">20,000円</div>
+                                </div>
+                                <div>
+                                    <div class="text-gray-400">特典</div>
+                                    <ul class="list-disc list-inside text-sm space-y-2">
+                                        <li>無制限利用</li>
+                                        <li>優先予約権</li>
+                                        <li>特別イベント参加</li>
+                                        <li>プレミアムサポート</li>
+                                        <li>コミュニティリーダー権限</li>
+                                    </ul>
+                                </div>
+                                <div class="text-sm text-gray-400">想定比率: 10%</div>
+                                <div class="text-sm text-gray-400">主なターゲット：デジタルノマド、頻繁な移動者</div>
+                            </div>
+                        </div>
+                        <div class="bg-gradient-to-br from-gray-800 to-gray-700 text-white rounded-2xl p-8 transform hover:scale-105 transition-transform duration-300">
+                            <div class="flex justify-between items-start mb-6">
+                                <h4 class="text-2xl font-bold">Premium</h4>
+                                <span class="bg-gradient-to-r from-blue-400 to-purple-400 text-white px-3 py-1 rounded-full text-sm">検証版</span>
+                            </div>
+                            <div class="space-y-6">
+                                <div>
+                                    <div class="text-gray-400">必要トークン</div>
+                                    <div class="text-3xl font-bold">1,000 SDT</div>
+                                </div>
+                                <div>
+                                    <div class="text-gray-400">月会費</div>
+                                    <div class="text-3xl font-bold">12,000円</div>
+                                </div>
+                                <div>
+                                    <div class="text-gray-400">特典</div>
+                                    <ul class="list-disc list-inside text-sm space-y-2">
+                                        <li>月15泊まで利用可能</li>
+                                        <li>一部優先予約</li>
+                                        <li>コミュニティ特典</li>
+                                        <li>標準サポート</li>
+                                        <li>イベント参加権</li>
+                                    </ul>
+                                </div>
+                                <div class="text-sm text-gray-400">想定比率: 30%</div>
+                                <div class="text-sm text-gray-400">主なターゲット：副業・複業層、定期的な移動者</div>
+                            </div>
+                        </div>
+    
+                        <div class="bg-gradient-to-br from-gray-700 to-gray-600 text-white rounded-2xl p-8 transform hover:scale-105 transition-transform duration-300">
+                            <div class="flex justify-between items-start mb-6">
+                                <h4 class="text-2xl font-bold">Standard</h4>
+                                <span class="bg-gradient-to-r from-purple-400 to-pink-400 text-white px-3 py-1 rounded-full text-sm">検証版</span>
+                            </div>
+                            <div class="space-y-6">
+                                <div>
+                                    <div class="text-gray-400">必要トークン</div>
+                                    <div class="text-3xl font-bold">100 SDT</div>
+                                </div>
+                                <div>
+                                    <div class="text-gray-400">月会費</div>
+                                    <div class="text-3xl font-bold">5,000円</div>
+                                </div>
+                                <div>
+                                    <div class="text-gray-400">特典</div>
+                                    <ul class="list-disc list-inside text-sm space-y-2">
+                                        <li>月5泊まで利用可能</li>
+                                        <li>基本サービス利用</li>
+                                        <li>ポイント還元</li>
+                                        <li>基本サポート</li>
+                                        <li>コミュニティ参加</li>
+                                    </ul>
+                                </div>
+                                <div class="text-sm text-gray-400">想定比率: 60%</div>
+                                <div class="text-sm text-gray-400">主なターゲット：お試し利用、地方創生従事者</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="bg-gray-50 rounded-3xl p-12 mb-16">
+                    <h3 class="text-3xl font-semibold mb-8">主要機能と実装スケジュール</h3>
+                    <div class="relative">
+                        <div class="absolute h-full w-0.5 bg-gray-200 left-8 top-0 hidden md:block"></div>
+                        <div class="space-y-12">
+                            <div class="relative flex gap-8">
+                                <div class="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold shrink-0">P1</div>
+                                <div class="bg-white rounded-xl p-6 shadow-sm flex-1">
+                                    <h4 class="text-xl font-semibold mb-4">Phase 1（0-6M）</h4>
+                                    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+                                        <div>
+                                            <h5 class="font-semibold mb-2">入退室管理</h5>
+                                            <ul class="text-sm space-y-2">
+                                                <li class="flex items-center">
+                                                    <svg class="w-4 h-4 text-blue-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                                    </svg>
+                                                    スマートロック基本実装
+                                                </li>
+                                                <li class="flex items-center">
+                                                    <svg class="w-4 h-4 text-blue-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                                    </svg>
+                                                    手動バックアップ体制
+                                                </li>
+                                                <li class="flex items-center">
+                                                    <svg class="w-4 h-4 text-blue-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                                    </svg>
+                                                    基本セキュリティ設定
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <h5 class="font-semibold mb-2">予約システム</h5>
+                                            <ul class="text-sm space-y-2">
+                                                <li class="flex items-center">
+                                                    <svg class="w-4 h-4 text-blue-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                                    </svg>
+                                                    基本予約機能
+                                                </li>
+                                                <li class="flex items-center">
+                                                    <svg class="w-4 h-4 text-blue-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                                    </svg>
+                                                    手動承認対応
+                                                </li>
+                                                <li class="flex items-center">
+                                                    <svg class="w-4 h-4 text-blue-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                                    </svg>
+                                                    カレンダー連携
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <h5 class="font-semibold mb-2">決済機能</h5>
+                                            <ul class="text-sm space-y-2">
+                                                <li class="flex items-center">
+                                                    <svg class="w-4 h-4 text-blue-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                                    </svg>
+                                                    フィアット決済
+                                                </li>
+                                                <li class="flex items-center">
+                                                    <svg class="w-4 h-4 text-blue-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                                    </svg>
+                                                    手動確認プロセス
+                                                </li>
+                                                <li class="flex items-center">
+                                                    <svg class="w-4 h-4 text-blue-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                                    </svg>
+                                                    基本レポーティング
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <h5 class="font-semibold mb-2">コミュニティ機能</h5>
+                                            <ul class="text-sm space-y-2">
+                                                <li class="flex items-center">
+                                                    <svg class="w-4 h-4 text-blue-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                                    </svg>
+                                                    基本SNS機能
+                                                </li>
+                                                <li class="flex items-center">
+                                                    <svg class="w-4 h-4 text-blue-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                                    </svg>
+                                                    掲示板実装
+                                                </li>
+                                                <li class="flex items-center">
+                                                    <svg class="w-4 h-4 text-blue-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                                    </svg>
+                                                    メッセージ機能
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="relative flex gap-8">
+                                <div class="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center text-white font-bold shrink-0">P2</div>
+                                <div class="bg-white rounded-xl p-6 shadow-sm flex-1">
+                                    <h4 class="text-xl font-semibold mb-4">Phase 2（7-12M）</h4>
+                                    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+                                        <div>
+                                            <h5 class="font-semibold mb-2">入退室管理</h5>
+                                            <ul class="text-sm space-y-2">
+                                                <li class="flex items-center">
+                                                    <svg class="w-4 h-4 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                                    </svg>
+                                                    顔認証システム
+                                                </li>
+                                                <li class="flex items-center">
+                                                    <svg class="w-4 h-4 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                                    </svg>
+                                                    遠隔監視導入
+                                                </li>
+                                                <li class="flex items-center">
+                                                    <svg class="w-4 h-4 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                                    </svg>
+                                                    セキュリティ強化
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <h5 class="font-semibold mb-2">予約システム</h5>
+                                            <ul class="text-sm space-y-2">
+                                                <li class="flex items-center">
+                                                    <svg class="w-4 h-4 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                                    </svg>
+                                                    ブロックチェーン連携
+                                                </li>
+                                                <li class="flex items-center">
+                                                    <svg class="w-4 h-4 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                                    </svg>
+                                                    スマート契約導入
+                                                </li>
+                                                <li class="flex items-center">
+                                                    <svg class="w-4 h-4 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                                    </svg>
+                                                    自動承認システム
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <h5 class="font-semibold mb-2">決済機能</h5>
+                                            <ul class="text-sm space-y-2">
+                                                <li class="flex items-center">
+                                                    <svg class="w-4 h-4 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                                    </svg>
+                                                    トークン決済実装
+                                                </li>
+                                                <li class="flex items-center">
+                                                    <svg class="w-4 h-4 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                                    </svg>
+                                                    半自動化処理
+                                                </li>
+                                                <li class="flex items-center">
+                                                    <svg class="w-4 h-4 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                                    </svg>
+                                                    自動レポーティング
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <h5 class="font-semibold mb-2">コミュニティ機能</h5>
+                                            <ul class="text-sm space-y-2">
+                                                <li class="flex items-center">
+                                                    <svg class="w-4 h-4 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                                    </svg>
+                                                    評価システム導入
+                                                </li>
+                                                <li class="flex items-center">
+                                                    <svg class="w-4 h-4 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                                    </svg>
+                                                    ポイント機能実装
+                                                </li>
+                                                <li class="flex items-center">
+                                                    <svg class="w-4 h-4 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                                    </svg>
+                                                    イベント管理機能
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="relative flex gap-8">
+                                <div class="w-16 h-16 bg-purple-500 rounded-full flex items-center justify-center text-white font-bold shrink-0">P3</div>
+                                <div class="bg-white rounded-xl p-6 shadow-sm flex-1">
+                                    <h4 class="text-xl font-semibold mb-4">Phase 3（13-18M）</h4>
+                                    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+                                        <!-- 入退室管理 -->
+                                        <div>
+                                            <h5 class="font-semibold mb-2">入退室管理</h5>
+                                            <ul class="text-sm space-y-2">
+                                                <li class="flex items-center">
+                                                    <svg class="w-4 h-4 text-purple-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                                    </svg>
+                                                    完全自動化運用
+                                                    <span class="ml-2 text-xs text-purple-400">New</span>
+                                                </li>
+                                                <li class="flex items-center">
+                                                    <svg class="w-4 h-4 text-purple-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                                    </svg>
+                                                    AI異常検知
+                                                    <span class="ml-2 text-xs text-purple-400">New</span>
+                                                </li>
+                                                <li class="flex items-center">
+                                                    <svg class="w-4 h-4 text-purple-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                                    </svg>
+                                                    予測的メンテナンス
+                                                    <span class="ml-2 text-xs text-purple-400">New</span>
+                                                </li>
+                                                <li class="flex items-center">
+                                                    <svg class="w-4 h-4 text-purple-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                                    </svg>
+                                                    24時間監視システム
+                                                </li>
+                                            </ul>
+                                        </div>
+                            
+                                        <!-- 予約システム -->
+                                        <div>
+                                            <h5 class="font-semibold mb-2">予約システム</h5>
+                                            <ul class="text-sm space-y-2">
+                                                <li class="flex items-center">
+                                                    <svg class="w-4 h-4 text-purple-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                                    </svg>
+                                                    動的価格決定
+                                                    <span class="ml-2 text-xs text-purple-400">New</span>
+                                                </li>
+                                                <li class="flex items-center">
+                                                    <svg class="w-4 h-4 text-purple-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                                    </svg>
+                                                    需要予測導入
+                                                    <span class="ml-2 text-xs text-purple-400">New</span>
+                                                </li>
+                                                <li class="flex items-center">
+                                                    <svg class="w-4 h-4 text-purple-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                                    </svg>
+                                                    AI最適化予約
+                                                    <span class="ml-2 text-xs text-purple-400">New</span>
+                                                </li>
+                                                <li class="flex items-center">
+                                                    <svg class="w-4 h-4 text-purple-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                                    </svg>
+                                                    キャンセル予測システム
+                                                </li>
+                                            </ul>
+                                        </div>
+                            
+                                        <!-- 決済機能 -->
+                                        <div>
+                                            <h5 class="font-semibold mb-2">決済機能</h5>
+                                            <ul class="text-sm space-y-2">
+                                                <li class="flex items-center">
+                                                    <svg class="w-4 h-4 text-purple-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                                    </svg>
+                                                    完全自動化
+                                                    <span class="ml-2 text-xs text-purple-400">New</span>
+                                                </li>
+                                                <li class="flex items-center">
+                                                    <svg class="w-4 h-4 text-purple-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                                    </svg>
+                                                    インセンティブ連携
+                                                    <span class="ml-2 text-xs text-purple-400">New</span>
+                                                </li>
+                                                <li class="flex items-center">
+                                                    <svg class="w-4 h-4 text-purple-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                                    </svg>
+                                                    高度な分析機能
+                                                    <span class="ml-2 text-xs text-purple-400">New</span>
+                                                </li>
+                                                <li class="flex items-center">
+                                                    <svg class="w-4 h-4 text-purple-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                                    </svg>
+                                                    マルチ通貨対応
+                                                </li>
+                                            </ul>
+                                        </div>
+                            
+                                        <!-- コミュニティ機能 -->
+                                        <div>
+                                            <h5 class="font-semibold mb-2">コミュニティ機能</h5>
+                                            <ul class="text-sm space-y-2">
+                                                <li class="flex items-center">
+                                                    <svg class="w-4 h-4 text-purple-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                                    </svg>
+                                                    DAO統治機能
+                                                    <span class="ml-2 text-xs text-purple-400">New</span>
+                                                </li>
+                                                <li class="flex items-center">
+                                                    <svg class="w-4 h-4 text-purple-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                                    </svg>
+                                                    投票システム
+                                                    <span class="ml-2 text-xs text-purple-400">New</span>
+                                                </li>
+                                                <li class="flex items-center">
+                                                    <svg class="w-4 h-4 text-purple-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                                    </svg>
+                                                    コミュニティDAOシステム
+                                                    <span class="ml-2 text-xs text-purple-400">New</span>
+                                                </li>
+                                                <li class="flex items-center">
+                                                    <svg class="w-4 h-4 text-purple-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                                    </svg>
+                                                    クロスコミュニティ連携
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- 期待される成果 -->
+                                    <div class="mt-6 bg-purple-50 rounded-lg p-4">
+                                        <h5 class="font-semibold mb-2 text-purple-700">期待される成果</h5>
+                                        <div class="grid md:grid-cols-3 gap-4">
+                                            <div class="text-sm">
+                                                <span class="font-semibold text-purple-600">自動化率</span>
+                                                <div class="text-gray-600">90%以上達成</div>
+                                            </div>
+                                            <div class="text-sm">
+                                                <span class="font-semibold text-purple-600">運営コスト</span>
+                                                <div class="text-gray-600">70%削減実現</div>
+                                            </div>
+                                            <div class="text-sm">
+                                                <span class="font-semibold text-purple-600">利用者満足度</span>
+                                                <div class="text-gray-600">85%以上達成</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div id="financial" class="grid lg:grid-cols-2 gap-8 mb-16">
+                    <div class="bg-white rounded-2xl p-8 shadow-sm">
+                        <h3 class="text-2xl font-semibold mb-6">1施設あたりの収支（月額）</h3>
+                        
+                        <div class="space-y-6">
+                            <div>
+                                <h4 class="text-xl font-semibold text-green-600 mb-4">収入内訳</h4>
+                                <div class="space-y-3">
+                                    <div class="flex justify-between items-center">
+                                        <div>
+                                            <span>会員収入（Unlimited）</span>
+                                            <div class="text-sm text-gray-500">10名想定</div>
+                                        </div>
+                                        <span class="font-semibold">200,000円</span>
+                                    </div>
+                                    <div class="flex justify-between items-center">
+                                        <div>
+                                            <span>会員収入（Premium）</span>
+                                            <div class="text-sm text-gray-500">30名想定</div>
+                                        </div>
+                                        <span class="font-semibold">360,000円</span>
+                                    </div>
+                                    <div class="flex justify-between items-center">
+                                        <div>
+                                            <span>会員収入（Standard）</span>
+                                            <div class="text-sm text-gray-500">60名想定</div>
+                                        </div>
+                                        <span class="font-semibold">300,000円</span>
+                                    </div>
+                                    <div class="h-px bg-gray-200 my-2"></div>
+                                    <div class="flex justify-between items-center text-lg font-bold">
+                                        <span>合計収入</span>
+                                        <span class="text-green-600">860,000円</span>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div>
+                                <h4 class="text-xl font-semibold text-red-600 mb-4">支出内訳</h4>
+                                <div class="space-y-3">
+                                    <div class="flex justify-between items-center">
+                                        <div>
+                                            <span>建物賃料</span>
+                                            <div class="text-sm text-gray-500">市場平均</div>
+                                        </div>
+                                        <span class="font-semibold">300,000円</span>
+                                    </div>
+                                    <div class="flex justify-between items-center">
+                                        <div>
+                                            <span>光熱費</span>
+                                            <div class="text-sm text-gray-500">実測ベース</div>
+                                        </div>
+                                        <span class="font-semibold">50,000円</span>
+                                    </div>
+                                    <div class="flex justify-between items-center">
+                                        <div>
+                                            <span>通信費</span>
+                                            <div class="text-sm text-gray-500">高速回線</div>
+                                        </div>
+                                        <span class="font-semibold">10,000円</span>
+                                    </div>
+                                    <div class="flex justify-between items-center">
+                                        <div>
+                                            <span>メンテナンス</span>
+                                            <div class="text-sm text-gray-500">定期点検含む</div>
+                                        </div>
+                                        <span class="font-semibold">30,000円</span>
+                                    </div>
+                                    <div class="flex justify-between items-center">
+                                        <div>
+                                            <span>保険料</span>
+                                            <div class="text-sm text-gray-500">損害保険</div>
+                                        </div>
+                                        <span class="font-semibold">20,000円</span>
+                                    </div>
+                                    <div class="flex justify-between items-center">
+                                        <div>
+                                            <span>予備費</span>
+                                            <div class="text-sm text-gray-500">想定外対応</div>
+                                        </div>
+                                        <span class="font-semibold">50,000円</span>
+                                    </div>
+                                    <div class="h-px bg-gray-200 my-2"></div>
+                                    <div class="flex justify-between items-center text-lg font-bold">
+                                        <span>合計支出</span>
+                                        <span class="text-red-600">460,000円</span>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="bg-gray-50 rounded-xl p-4">
+                                <div class="flex justify-between items-center text-xl font-bold">
+                                    <span>月間収支</span>
+                                    <span class="text-green-600">400,000円</span>
+                                </div>
+                                <div class="text-sm text-gray-600 mt-2">想定利益率: 46%</div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="bg-white rounded-2xl p-8 shadow-sm">
+                        <h3 class="text-2xl font-semibold mb-6">開発・展開コスト（初期18ヶ月）</h3>
+                        <div class="space-y-6">
+                            <div class="grid gap-4">
+                                <div class="border rounded-lg p-4">
+                                    <div class="flex justify-between items-center mb-2">
+                                        <span class="font-semibold">システム開発費</span>
+                                        <span class="text-lg font-bold">7,500万円</span>
+                                    </div>
+                                    <div class="text-sm text-gray-600">調達方法: トークンセール</div>
+                                    <div class="text-sm text-gray-600">時期: 0-6M</div>
+                                    <div class="text-sm text-gray-600">主な用途:</div>
+                                    <ul class="text-sm text-gray-600 list-disc list-inside ml-2">
+                                        <li>スマートコントラクト開発</li>
+                                        <li>基幹システム構築</li>
+                                        <li>セキュリティ対策</li>
+                                    </ul>
+                                </div>
+                                <div class="border rounded-lg p-4">
+                                    <div class="flex justify-between items-center mb-2">
+                                        <span class="font-semibold">施設整備費</span>
+                                        <span class="text-lg font-bold">1.5億円</span>
+                                    </div>
+                                    <div class="text-sm text-gray-600">調達方法: VCファンド</div>
+                                    <div class="text-sm text-gray-600">時期: 7-18M</div>
+                                    <div class="text-sm text-gray-600">主な用途:</div>
+                                    <ul class="text-sm text-gray-600 list-disc list-inside ml-2">
+                                        <li>物件リノベーション</li>
+                                        <li>IoT機器導入</li>
+                                        <li>備品購入</li>
+                                    </ul>
+                                </div>
+                                <div class="border rounded-lg p-4">
+                                    <div class="flex justify-between items-center mb-2">
+                                        <span class="font-semibold">運転資金</span>
+                                        <span class="text-lg font-bold">5,000万円</span>
+                                    </div>
+                                    <div class="text-sm text-gray-600">調達方法: 自己資金</div>
+                                    <div class="text-sm text-gray-600">時期: 0-18M</div>
+                                    <div class="text-sm text-gray-600">主な用途:</div>
+                                    <ul class="text-sm text-gray-600 list-disc list-inside ml-2">
+                                        <li>人件費</li>
+                                        <li>マーケティング費</li>
+                                        <li>運営経費</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="bg-gray-50 rounded-xl p-4">
+                                <div class="flex justify-between items-center text-xl font-bold">
+                                    <span>総額</span>
+                                    <span>3.25億円</span>
+                                </div>
+                                <div class="text-sm text-gray-600 mt-2">
+                                    <div>予想回収期間: 24-36ヶ月</div>
+                                    <div>想定IRR: 35%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="bg-black text-white rounded-3xl p-12">
+                    <h3 class="text-3xl font-semibold mb-8">リスク分析と対策</h3>
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div class="space-y-6">
+                            <div class="bg-gray-800 rounded-xl p-6">
+                                <h4 class="text-xl font-semibold mb-4 flex items-center">
+                                    <span class="w-8 h-8 bg-red-500 rounded-full flex items-center justify-center mr-3">1</span>
+                                    技術リスク
+                                </h4>
+                                <div class="space-y-4">
+                                    <div class="flex justify-between text-sm">
+                                        <span>発生確率:</span>
+                                        <span class="text-red-400">高</span>
+                                    </div>
+                                    <div class="flex justify-between text-sm">
+                                        <span>影響度:</span>
+                                        <span class="text-yellow-400">中</span>
+                                    </div>
+                                    <div>
+                                        <h5 class="text-sm text-gray-400 mb-2">対策案:</h5>
+                                        <ul class="list-disc list-inside text-sm space-y-1 text-gray-300">
+                                            <li>段階的な機能実装</li>
+                                            <li>バックアップ体制</li>
+                                            <li>専門家レビュー</li>
+                                            <li>徹底したテスト</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="bg-gray-800 rounded-xl p-6">
+                                <h4 class="text-xl font-semibold mb-4 flex items-center">
+                                    <span class="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center mr-3">2</span>
+                                    運営リスク
+                                </h4>
+                                <div class="space-y-4">
+                                    <div class="flex justify-between text-sm">
+                                        <span>発生確率:</span>
+                                        <span class="text-yellow-400">中</span>
+                                    </div>
+                                    <div class="flex justify-between text-sm">
+                                        <span>影響度:</span>
+                                        <span class="text-red-400">高</span>
+                                    </div>
+                                    <div>
+                                        <h5 class="text-sm text-gray-400 mb-2">対策案:</h5>
+                                        <ul class="list-disc list-inside text-sm space-y-1 text-gray-300">
+                                            <li>マニュアル整備</li>
+                                            <li>AI監視システム</li>
+                                            <li>緊急対応体制</li>
+                                            <li>保険加入</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="space-y-6">
+                            <div class="bg-gray-800 rounded-xl p-6">
+                                <h4 class="text-xl font-semibold mb-4 flex items-center">
+                                    <span class="w-8 h-8 bg-yellow-500 rounded-full flex items-center justify-center mr-3">3</span>
+                                    法規制リスク
+                                </h4>
+                                <div class="space-y-4">
+                                    <div class="flex justify-between text-sm">
+                                        <span>発生確率:</span>
+                                        <span class="text-yellow-400">中</span>
+                                    </div>
+                                    <div class="flex justify-between text-sm">
+                                        <span>影響度:</span>
+                                        <span class="text-red-400">高</span>
+                                    </div>
+                                    <div>
+                                        <h5 class="text-sm text-gray-400 mb-2">対策案:</h5>
+                                        <ul class="list-disc list-inside text-sm space-y-1 text-gray-300">
+                                            <li>顧問弁護士との連携</li>
+                                            <li>業界団体加入</li>
+                                            <li>行政との協議</li>
+                                            <li>コンプライアンス体制</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="bg-gray-800 rounded-xl p-6">
+                                <h4 class="text-xl font-semibold mb-4 flex items-center">
+                                    <span class="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center mr-3">4</span>
+                                    市場リスク
+                                </h4>
+                                <div class="space-y-4">
+                                    <div class="flex justify-between text-sm">
+                                        <span>発生確率:</span>
+                                        <span class="text-green-400">低</span>
+                                    </div>
+                                    <div class="flex justify-between text-sm">
+                                        <span>影響度:</span>
+                                        <span class="text-yellow-400">中</span>
+                                    </div>
+                                    <div>
+                                        <h5 class="text-sm text-gray-400 mb-2">対策案:</h5>
+                                        <ul class="list-disc list-inside text-sm space-y-1 text-gray-300">
+                                            <li>段階的な展開</li>
+                                            <li>需要調査の実施</li>
+                                            <li>柔軟な価格設定</li>
+                                            <li>マーケット分析</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <footer class="bg-gray-900 text-white py-12">
+            <div class="container mx-auto px-6">
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-4">StayDAO</h3>
+                        <p class="text-gray-400">Web3技術で実現する次世代型シェアハウスネットワーク</p>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4">Contact</h4>
+                        <p class="text-gray-400">お問い合わせ: info@staydao.com</p>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4">SNS</h4>
+                        <div class="flex space-x-4">
+                            <a href="#" class="text-gray-400 hover:text-white">Twitter</a>
+                            <a href="#" class="text-gray-400 hover:text-white">Discord</a>
+                            <a href="#" class="text-gray-400 hover:text-white">Telegram</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-8 pt-8 border-t border-gray-800 text-center text-gray-400">
+                    <p>&copy; 2024 StayDAO. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
